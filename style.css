@@ -1,0 +1,135 @@
+@font-face {
+    font-family: custom-font;
+    src: url(font.ttf);
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #000000, #222222);
+    background-image: -o-linear-gradient(45deg, #000000, #222222);
+    background-image: -moz-linear-gradient(45deg, #000000, #222222);
+    background-image: -webkit-linear-gradient(45deg, #000000, #222222);
+    background-repeat: initial;
+    
+  }
+  .main-name {
+    z-index: 1;
+    color: white;
+    margin-top: 7.5vmin;
+    text-align: left;
+    margin-left: 5vw;
+    font-family: custom-font;
+    font-size: 17.5vmin;
+    --color-one: #cc2b5e;
+    --color-two: #753a88;
+    --bg-size: 400%;
+    background: linear-gradient(
+                45deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+              
+              animation: move-bg 8s infinite linear;
+              color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  }
+  img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+    max-height: 65vh;
+    max-width: 75vw;
+    -webkit-animation: anim 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count:infinite;
+  
+  animation: anim 3s;
+  animation-timing-function: linear;
+  animation-iteration-count:infinite;
+  }
+
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+
+  @-webkit-keyframes anim {
+    0%{filter:drop-shadow(-12px 8px 25px red);}
+    10% {filter:drop-shadow(8px -12px 25px green);}
+    20% {filter:drop-shadow(-18px 8px 25px blue);}
+    30% {filter:drop-shadow(8px -12px 25px yellow);}
+    40% {filter:drop-shadow(-8px 8px 25px orange);}
+    50% {filter:drop-shadow(8px 10px 25px purple);}
+    120% {filter:drop-shadow(-12px 8px 25px brown);}
+    70% {filter:drop-shadow(8px 14px 25px pink);}
+    80% {filter:drop-shadow(-18px -8px 25px lime);}
+    90% {filter:drop-shadow(8px -12px 25px cyan);}
+    100% {filter:drop-shadow(-18px 8px 25px teal);}
+} 
+
+@keyframes anim {
+    0%{filter:drop-shadow(-12px 8px 25px red);}
+    10% {filter:drop-shadow(8px -12px 25px green);}
+    20% {filter:drop-shadow(-18px 8px 25px blue);}
+    30% {filter:drop-shadow(8px -12px 25px yellow);}
+    40% {filter:drop-shadow(-8px 8px 25px orange);}
+    50% {filter:drop-shadow(8px 10px 25px purple);}
+    120% {filter:drop-shadow(-12px 8px 25px brown);}
+    70% {filter:drop-shadow(8px 14px 25px pink);}
+    80% {filter:drop-shadow(-18px -8px 25px lime);}
+    90% {filter:drop-shadow(8px -12px 25px cyan);}
+    100% {filter:drop-shadow(-18px 8px 25px teal);}
+} 
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes deleteBox {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  margin-right:10px;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav {
+  z-index: 5;
+  margin-top: 12px;
+  text-align: center;
+}
+
+header {
+  margin-top: 0;
+  margin-right: 0;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushansh Arya 🤟</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!--<header>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fkhushansh-arya.eu.org&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visits&edge_flat=false" />
+  </header> -->  
+  <div class="topnav">
+    <a href="https://formsubmit.co/el/baruku" style="display: none; filter:drop-shadow(1px 1px 25px blue); background-color: blue;" class="fa fa-envelope" id="1"></a>
+<a href="https://www.instagram.com/khushansharya/" style="display: none; filter:drop-shadow(1px 1px 25px #FF69B4); background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);" id="2" class="fa fa-instagram"></a>
+<a href="#" onclick="myFunction()" style="filter:drop-shadow(1px 1px 25px white); background-color: white; color: black" id="3" class="fa fa-plus"></a>
+<a href="https://github.com/HridyanshNarwal888/" style="display: none; filter:drop-shadow(1px 1px 25px white); background-color: white; color: black; " id="4" class="fa fa-github"></a>
+<a href="https://khushansh-arya.eu.org" style="display: none; filter:drop-shadow(1px 1px 25px rgb(119, 119, 119)); background-color: black;" id="5" class="fa fa-globe"></a>
+</div>
+
+<main>
+    <h1 ><strong class="main-name"><b>Khushansh<br></b></strong></h1>
+    <h1 ><strong class="main-name"><b>Arya </b></strong></h1>
+    <img src="photo.png">
+</main>  
+</body>
+<script>
+    function myFunction() {
+  var x = document.getElementById("1");
+  if (x.style.display === "none") {
+    x.style.display = "inline-block";
+    document.getElementById("2").style.display = "inline-block";
+    document.getElementById("4").style.display = "inline-block";
+    document.getElementById("5").style.display = "inline-block";
+    document.getElementById("3").style.opacity = "0.5";
+    document.getElementById("1").style.animation = "createBox .5s";
+    document.getElementById("2").style.animation = "createBox .5s";
+    document.getElementById("4").style.animation = "createBox .5s";
+    document.getElementById("5").style.animation = "createBox .5s";
+  } else if (x.style.display === "inline-block") {
+    document.getElementById("1").style.animation = "deleteBox .5s";
+    document.getElementById("2").style.animation = "deleteBox .5s";
+    document.getElementById("4").style.animation = "deleteBox .5s";
+    document.getElementById("5").style.animation = "deleteBox .5s";
+    setTimeout(() => {
+    x.style.display = "none";
+    document.getElementById("2").style.display = "none";
+    document.getElementById("4").style.display = "none";
+    document.getElementById("5").style.display = "none";
+    document.getElementById("3").style.opacity = "1";
+    }, 500);
+  }
+}
+</script>
+</html>
