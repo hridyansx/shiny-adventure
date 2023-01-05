@@ -10,7 +10,7 @@ body {
     background-image: -moz-linear-gradient(45deg, #000000, #222222);
     background-image: -webkit-linear-gradient(45deg, #000000, #222222);
     background-repeat: initial;
-    
+
   }
   .main-name {
     z-index: 1;
@@ -31,7 +31,7 @@ body {
                 var(--color-two),
                 var(--color-one)
               ) 0 0 / var(--bg-size) 100%;
-              
+
               animation: move-bg 8s infinite linear;
               color: transparent;
   -webkit-background-clip: text;
@@ -47,7 +47,7 @@ body {
     -webkit-animation: anim 3s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count:infinite;
-  
+
   animation: anim 3s;
   animation-timing-function: linear;
   animation-iteration-count:infinite;
@@ -71,7 +71,7 @@ body {
     80% {filter:drop-shadow(-18px -8px 25px lime);}
     90% {filter:drop-shadow(8px -12px 25px cyan);}
     100% {filter:drop-shadow(-18px 8px 25px teal);}
-} 
+}
 
 @keyframes anim {
     0%{filter:drop-shadow(-12px 8px 25px red);}
@@ -85,7 +85,7 @@ body {
     80% {filter:drop-shadow(-18px -8px 25px lime);}
     90% {filter:drop-shadow(8px -12px 25px cyan);}
     100% {filter:drop-shadow(-18px 8px 25px teal);}
-} 
+}
 
 @keyframes createBox {
   from {
@@ -133,3 +133,24 @@ header {
   margin-top: 0;
   margin-right: 0;
 }
+
+h1{
+  margin-bottom: 0;
+}
+
+.neonText {
+    color: #fff;
+    margin-top: 0;
+    margin-left: 5vw;
+    font-size: 5vmin;
+    font-family: custom-font;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
