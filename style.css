@@ -39,8 +39,8 @@ body {
   }
   img{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 30px;
     top: auto;
     max-height: 65vh;
     max-width: 75vw;
